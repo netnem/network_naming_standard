@@ -54,7 +54,7 @@ pdc-b1-uslit-f5-lb01
 
 ```
 sdc-b1-uslit-ex4601-vr00
-sdc-b1-uslit-ex4601-vr00
+sdc-b1-uslit-ex4601-vr01
 sdc-g-uslit-ar7401-ds00
 sdc-g-uslit-ar7402-ds00
 sdc-g-uslit-ar7001-dl00
