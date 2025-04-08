@@ -67,7 +67,7 @@ sdc-g-uslit-ar7001-ds00
 sdc-g-uslit-ar7001-ds01
 ```
 
-## endings:
+## Endings:
 ```
 bs = building switch
 br = building router
