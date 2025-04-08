@@ -1,4 +1,4 @@
-##Basic syntax
+## Basic syntax
 buildingName-floor-UN/LOCODE-vendorModelSwitchcount-placeinnetworkPairnumber
 
 https://unece.org/trade/cefact/unlocode-code-list-country-and-territory
@@ -18,7 +18,7 @@ ft-p3-uslit-c9401-bs00  ← switch on “p wing” of 3rd floor of a building
 ft-a3-uslit-c9401-bs00  ← switch on “a wing” of 3rd floor of a building
 ```
 
-##Datacenter switches should reference alphabet on walls (or pod number) (if available) otherwise just floor or arbitary pod number ('202' in example) or AS-PATH
+## Datacenter switches should reference alphabet on walls (or pod number) (if available) otherwise just floor or arbitary pod number ('202' in example) or AS-PATH
 ```
 sdc-e4-uslit-ar7501-ds00 ← located at E4 rack
 sdc-g-uslit-ar7501-ds00 ← located on ground floor (no numbers on wall)
@@ -44,7 +44,7 @@ ft-l5-uslit-ex3402-bs04
 sdc-1-uslit-mlx01-cr00
 ```
 
-##paired load balancers:
+## paired load balancers:
 ```
 sdc-b1-uslit-vf5-lb00
 pdc-b1-uslit-vf5-lb01
@@ -67,7 +67,7 @@ sdc-g-uslit-ar7001-ds00
 sdc-g-uslit-ar7001-ds01
 ```
 
-##endings:
+## endings:
 ```
 bs = building switch
 br = building router
@@ -86,7 +86,7 @@ vs = voice switch
 nss = non-standard-switch 
 nsr = non-standard-router
 ```
-##Pair numbers
+## Pair numbers
 
 The digits after the ending are to specify “pairs” or stack-members
 For example if you have a stack of 4 cisco switches, logically they will be labeled as the same switch in the stack, but the label on the device should be as such:
@@ -100,17 +100,17 @@ at-5-uslit-cs9301-bs03 - additional stack member 3
 
 Note:  the stack number always starts at 00. Example, Juniper's will start at 0. example: xe-0/0/0, but shelf 2 is xe-1/0/0. It's honestly all over the place depending on vendor, which is why 00 is where it always starts at. Just remember, the 00 notes the base unit.  
 
-##VRRP building router pairs of two individual devices (separate control planes) do NOT use the ending nomenclature
+## VRRP building router pairs of two individual devices (separate control planes) do NOT use the ending nomenclature
 ``
 Router 1 = wt-1-uslit-ex4601-br00
 Router 2 = wt-1-uslit-ex4602-br00
 ``
-##But if you stack/cluster those routers or something like virtual chassis 
+## But if you stack/cluster those routers or something like virtual chassis 
 
 wt-1-uslit-ex4601-br00
 wt-1-uslit-ex4601-br01
 
-##datacenter “paired” by mlag/trill/etc (or arbitrarily paired by ToR / pod number)
+## datacenter “paired” by mlag/trill/etc (or arbitrarily paired by ToR / pod number)
 ```
 sdc-g-uslit-ar7001-dl00
 sdc-g-uslit-ar7001-dl01
@@ -118,7 +118,7 @@ sdc-g-uslit-ar7001-dl01
 sdc-g-uslit-vdx6701-dl00
 sdc-g-uslit-vdx6701-dl01
 ```
-##But spines would be seperate:
+## But spines would be seperate:
 ```
 sdc-g-uslit-ar7501-ds00
 sdc-g-uslit-ar7502-ds00
